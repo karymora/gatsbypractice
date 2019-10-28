@@ -1,14 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
-export default () => (
-  <div>
+import Layout from "../components/layout"
+export default ({ children }) => (
+  <Layout>
     <h1>This is our homepage</h1>
+    <h1>This is another heading</h1>
     Hello world!
-    <div>
-      <Link to="/blog/">blog page</Link>
-    </div>
-    <div>
-      <a href="https://www.gatsbyjs.org">Gatsby Page</a>
-    </div>
-  </div>
+    <h2>This second heading</h2>
+    {/* <div className="container">
+      <div className="row">
+        <div className="col-4">hello</div>
+        <div className="col-4">hello</div>
+        <div className="col-4">hello</div>
+      </div>
+    </div> */}
+  </Layout>
 )

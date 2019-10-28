@@ -1,15 +1,13 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+import Layout from "../components/layout"
+import styles from "../components/blog.module.css"
 
 export default class blog extends Component {
   render() {
     return (
-      <div>
-        This is our blog Page
-        <div>
-          <Link to="/">Go Home</Link>
-        </div>
-      </div>
+      <Layout>
+        <h1 className={styles.title}>This is our blog page</h1>
+      </Layout>
     )
   }
 }
